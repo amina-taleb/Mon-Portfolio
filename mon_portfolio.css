@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 
 .bloc1 {
   display: flex;
@@ -122,7 +126,7 @@ a {
   border: 5px solid #ffffff; /* Bordure blanche autour de l'image */
 }
 
-/* CSS pour la description */
+
 .discription {
   margin-left: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -157,13 +161,6 @@ a {
 
 
 
-
-
-
-
-body {
-  background-color: black;
-}
 
 
 /*********************Bloc 3************************/
@@ -215,9 +212,9 @@ body {
 
 /* Titre du projet */
 .Mes_projets h3 {
-    font-size: 1.3rem;
+    font-size: 40px;
     margin-bottom: 10px;
-    color: #333;
+    color: white;
 }
 
 /* Description du projet */
