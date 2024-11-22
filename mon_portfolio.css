@@ -4,10 +4,13 @@ body {
 
 
 .bloc1 {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   height: 400px;
   padding: 0px;
+  z-index: 10; /*mettre en avant la navbarre*/
 }
 
 
@@ -109,7 +112,7 @@ a {
   max-width: 1500px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
   border-color: #fff;
 }
 
