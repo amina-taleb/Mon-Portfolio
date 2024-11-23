@@ -145,42 +145,51 @@ h1 {
   line-height: 1.8;
 }
 
-.discription p {
+.description p {
   font-size: 1.2rem;
+  color: #fff;
 }
 
+/* Competence section adjustments */
 .Mes_compétences {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
   gap: 20px;
   padding: 20px;
+  justify-items: center; /* Center circular boxes in the grid */
 }
 
 .Mes_compétences .comp {
-  background-color: #3b3937;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
+  background-color: white;
+  border-radius: 50%; /* Makes the box circular */
+  width: 150px; /* Ensure width and height are equal for a perfect circle */
+  height: 150px; /* Ensure width and height are equal for a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease-out;
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
+  overflow: hidden; /* Hide overflow to ensure images fit */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+  box-sizing: border-box;
+  position: relative;
 }
 
 .Mes_compétences img {
   width: 100%;
-  height: 150px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain; /* Ensure the entire image is visible */
+  border-radius: 50%; /* Keep the image circular */
+  padding: 10px; /* Add padding to create space around the image */
+  box-sizing: border-box; /* Ensures padding doesn't affect the circle */
 }
 
 .Mes_compétences h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 16px; /* Smaller font size for better fit */
   color: #fff;
+  margin-top: 10px;
+  text-align: center;
 }
+
 
 .Mes_projets {
   display: flex;
