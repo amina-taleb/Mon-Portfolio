@@ -63,8 +63,7 @@ a {
 }
 
 a:hover {
-  color: #1e90ff; /* Hover effect color */
-}
+  color: #1e90ff; }
 
 .button_red, .button_blue {
   background-color: transparent;
@@ -134,7 +133,6 @@ a:hover {
 h1 {
   text-align: center;
   font-size: 48px;
-  color: #99e4e2; /* Light turquoise for fresh look */
   margin-bottom: 20px;
 }
 
@@ -150,41 +148,40 @@ h1 {
   color: #fff;
 }
 
-/* Competence section adjustments */
+
 .Mes_compétences {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
   gap: 20px;
   padding: 20px;
-  justify-items: center; /* Center circular boxes in the grid */
+  justify-items: center; 
 }
 
 .Mes_compétences .comp {
   background-color: white;
-  border-radius: 50%; /* Makes the box circular */
-  width: 150px; /* Ensure width and height are equal for a perfect circle */
-  height: 150px; /* Ensure width and height are equal for a perfect circle */
+  border-radius: 50%; 
+  width: 150px; 
+  height: 150px; 
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-out;
-  overflow: hidden; /* Hide overflow to ensure images fit */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
-  box-sizing: border-box;
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   position: relative;
 }
 
 .Mes_compétences img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensure the entire image is visible */
-  border-radius: 50%; /* Keep the image circular */
-  padding: 10px; /* Add padding to create space around the image */
-  box-sizing: border-box; /* Ensures padding doesn't affect the circle */
+  object-fit: contain; 
+  border-radius: 50%; 
+  padding: 10px; 
+  box-sizing: border-box; 
 }
 
 .Mes_compétences h3 {
-  font-size: 16px; /* Smaller font size for better fit */
+  font-size: 16px; 
   color: #fff;
   margin-top: 10px;
   text-align: center;
