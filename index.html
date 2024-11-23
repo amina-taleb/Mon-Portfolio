@@ -1,88 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome page</title>
+    <title>Welcome Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-    <!----------------------------------   BLOC 1   -------------------------------------------------->
-    <div class="bloc1">
+    <header class="bloc1">
+        <img src="images/profil2.gif" alt="Galaxy background">
+    </header>
 
-        <div class="navigation">
-            <nav> 
-                <ul>  
-                    <li><button class="button_red"><a href="Perso_projects.html" target="_blank">Perso</a></button></li> 
-                    <li><button class="button_red"><a href="collab_projects.html" target="_blank">Collab</a></button></li>
-        
-                </ul>
-            </nav>
-        </div>
+    <nav class="bloc2">
+        <ul class="navigation">
+            <li><a class="button_red" href="Perso_projects.html" target="_blank">Perso</a></li> 
+            <li><a class="button_red" href="collab_projects.html" target="_blank">Collab</a></li>
+            <li><a class="button_red" href="https://www.linkedin.com/in/amina-taleb-051774173" target="_blank">LinkedIn</a></li>
+            <li><a class="button_red" href="https://github.com/amina-taleb" target="_blank">GitHub</a></li>
+            <li><a class="button_red" href="MonCV.pdf" target="_blank">Mon CV (PDF)</a></li>
+        </ul>
+    </nav>
 
-
-        <div class="profil">
-            <img src="images/profil2.gif" alt="galaxy">
-        </div>
-        
-
-        <div class="contact">
-            <ul>
-                <li><button class="button_blue"><a href="https://www.linkedin.com/in/amina-taleb-051774173" target="_blank">LinkedIn</a></button></li>
-                <li><button class="button_blue"><a href="https://github.com/amina-taleb" target="_blank">GitHub</a></button></li>
-                <li><button class="button_blue"><a href="">Mon CV (pdf)</a></button></li>
-            </ul>
-        </div>
-        
-    </div>
-
-  <!----------------------   Learn more about me       -------------->
-    <div class="bloc2">
+    <section class="bloc3">
         <div class="Photo">
-            <img src="images/moi.jpeg" alt="amina taleb">
+            <img src="images/moi.jpeg" alt="Photo of Amina Taleb">
         </div>
-        <div class="discription">
-            <h1>A propos de moi</h1><br>
-            <p>👋 Salut, je suis Amina Taleb, étudiante passionnée par le domaine de l'intelligence artificielle (IA). Actuellement en train de développer mes compétences en IA, je suis à la recherche d'une alternance en tant que développeuse IA à partir de septembre 2025. 💻
-
-                Je suis particulièrement intéressée par les applications innovantes de l'IA et je suis impatiente de contribuer à des projets passionnants dans ce domaine. 🚀</p>
+        <div class="description">
+            <h1>À propos de moi</h1>
+            <p>👋 Salut, je suis Amina Taleb, étudiante passionnée par le domaine de l'intelligence artificielle (IA). Actuellement en train de développer mes compétences en IA, je suis à la recherche d'une alternance en tant que développeuse IA à partir de septembre 2025. 💻</p>
+            <p>Je suis particulièrement intéressée par les applications innovantes de l'IA et je suis impatiente de contribuer à des projets passionnants dans ce domaine. 🚀</p>
         </div>
-    </div>
- <!-------------------      Bloc3 Ici je vais epingler 4 projets ------->
+    </section>
 
+    <section class="bloc4">
+        <div class="titre">
+            <h1>Mes compétences</h1>
+        </div>
+        <div class="Mes_compétences">
+            <div class="comp">
+                <img src="images/projet1.jpg" alt="HTML project preview" class="comp1">
+                <h3>HTML</h3>
+            </div>
+            <div class="comp">
+                <img src="images/projet2.jpg" alt="CSS project preview" class="comp2">
+                <h3>CSS</h3>
+            </div>
+            <div class="comp">
+                <img src="images/projet3.png" alt="Python project preview" class="comp3">
+                <h3>Python</h3>
+            </div>
+        </div>
+    </section>
 
-    <div class="bloc3">
-
+    <section class="bloc5">
         <div class="titre">
             <h1>Mes Projets</h1>
         </div>
-
         <div class="Mes_projets">
-            <div class="project1">
-                <img src="images/projet1.jpg" alt="Projet 1" class="projet1">
+            <div class="project">
+                <img src="images/projet1.jpg" alt="FunSite project preview" class="projet1">
                 <h3>FunSite</h3>
-                <button><a href="">En savoir plus</a></button>
+                <a href="https://amina-taleb.github.io/FanSite/" target="_blank"><button>En savoir plus</button></a>
             </div>
-            <div class="project2">
-                <img src="images/projet2.jpg" alt="Projet 2" class="projet2">
+            <div class="project">
+                <img src="images/projet2.jpg" alt="BloomPetals project preview" class="projet2">
                 <h3>BloomPetals</h3>
-                <button><a href="">En savoir plus</a></button>
+                <a href="projet2.html"><button>En savoir plus</button></a>
             </div>
-            <div class="project3">
-                <img src="images/projet3.png" alt="Projet 3" class="projet3">
+            <div class="project">
+                <img src="images/projet3.png" alt="CV project preview" class="projet3">
                 <h3>Mon CV</h3>
-                <button><a href="">En savoir plus</a></button>
+                <a href="projet3.html"><button>En savoir plus</button></a>
             </div>
-
         </div>
-        
-        
-    </div>
+    </section>
 
     <footer>
         <h3>&copy; 2024 Amina TALEB. Tous droits réservés.</h3>
     </footer>
+    
 </body>
 </html>

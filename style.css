@@ -1,76 +1,57 @@
-/* Body - Général */
 body {
   display: flex;
   flex-direction: column;
-  background-color: #1a1a1a; /* Couleur de fond ajustée pour un contraste plus doux */
-  padding: 20px;
-  font-family: Arial, sans-serif; /* Font standard pour un look moderne */
+  padding: 0px;
+  font-family: 'Arial', sans-serif;
+  background-color: #000000; 
 }
 
-/* Bloc 1 - Barre de navigation */
 .bloc1 {
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  height: 400px;
-  z-index: 10;
-  background-color: #333; /* Fond plus sombre pour la navigation */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre subtile pour donner du relief */
-}
-
-/* Navigation */
-.navigation {
-  width: 20%;
-  background-color: #2a2a2a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Profil */
-.profil {
-  width: 60%; /* Ajusté pour occuper une proportion plus large */
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
+  height: 420px;
   justify-content: center;
   align-items: center;
-}
+  position: relative; }
 
-.profil img {
+.bloc1 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  filter: brightness(80%); /* Légère diminution de la luminosité pour du texte lisible */
+  right: 0;
+  bottom: 0;
+  margin: 0; /* Ensure no extra margin is applied */
 }
 
-/* Contact */
-.contact {
-  width: 20%;
-  background-color: #2a2a2a;
+
+.bloc2 {
+  position: sticky;
+  top: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-left: 2px solid #444; /* Séparation subtile */
+  flex-direction: row;
+  height: 80px; /* Reduced height for a cleaner look */
+  z-index: 10;
+  background-color: #333; /* Dark background for navigation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
-/* Navigation - Listes */
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
-nav ul li, .contact ul li {
-  display: flex;
-  justify-content: center;
+nav ul li {
   padding: 15px;
-  border-bottom: 1px solid #444; /* Séparateur entre les éléments */
 }
 
 a {
@@ -82,17 +63,16 @@ a {
 }
 
 a:hover {
-  color: #1e90ff; /* Couleur différente au survol */
+  color: #1e90ff; /* Hover effect color */
 }
 
-/* Boutons personnalisés */
 .button_red, .button_blue {
   background-color: transparent;
   color: #f0f0f0;
   padding: 15px;
-  border: 2px solid aqua;
-  height: 60px; /* Hauteur ajustée */
-  width: 180px; /* Largeur ajustée */
+  border: 2px solid #1e90ff;
+  height: 60px;
+  width: 180px;
   margin: 10px;
   text-align: center;
   cursor: pointer;
@@ -100,38 +80,23 @@ a:hover {
 }
 
 .button_red:hover {
-  background-color: #ff4444; /* Rouge clair au survol */
+  background-color: #ff4444;
   color: #fff;
 }
 
 .button_blue:hover {
-  background-color: #1e90ff; /* Bleu clair au survol */
+  background-color: #1e90ff;
   color: #fff;
 }
 
-/* Media query pour petits écrans */
 @media screen and (max-width: 768px) {
   .bloc1 {
     flex-direction: column;
     height: auto;
   }
 
-  .navigation, .contact {
+  .navigation {
     width: 100%;
-    height: auto;
-  }
-
-  .profil {
-    height: auto;
-  }
-
-  .profil img {
-    height: auto;
-  }
-
-  nav ul li, .contact ul li {
-    padding: 10px;
-    flex-direction: column;
   }
 
   .button_red, .button_blue {
@@ -140,8 +105,7 @@ a:hover {
   }
 }
 
-/* Bloc 2 - Conteneur */
-.bloc2 {
+.bloc3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,36 +113,35 @@ a:hover {
   border-radius: 10px;
   padding: 40px;
   max-width: 1200px;
-  margin: 40px auto; /* Centré avec espacement suffisant */
+  margin: 40px auto;
   border: 1px solid #444;
 }
 
-/* Photo et description */
 .Photo {
   text-align: center;
-  margin-right: 20px; /* Espacement avec la description */
+  margin-right: 20px;
 }
 
 .Photo img {
   width: 250px;
-  height: 250px; /* Taille fixe pour uniformiser */
+  height: 250px;
   border-radius: 50%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border: 5px solid #ffffff;
-  object-fit: cover; /* Assure le remplissage correct du conteneur */
+  object-fit: cover;
 }
 
 h1 {
   text-align: center;
   font-size: 48px;
-  color: #fff;
+  color: #99e4e2; /* Light turquoise for fresh look */
   margin-bottom: 20px;
 }
 
 .discription {
   font-family: 'Verdana', sans-serif;
   font-style: italic;
-  color: #ddd; /* Couleur plus douce pour le texte */
+  color: #ddd;
   line-height: 1.8;
 }
 
@@ -186,7 +149,39 @@ h1 {
   font-size: 1.2rem;
 }
 
-/* Bloc 3 - Projets */
+.Mes_compétences {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Mes_compétences .comp {
+  background-color: #3b3937;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-out;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.Mes_compétences img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.Mes_compétences h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
 .Mes_projets {
   display: flex;
   justify-content: space-between;
@@ -197,7 +192,6 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* Style uniforme pour les images des projets */
 .Mes_projets > div {
   background-color: #3b3937;
   border-radius: 10px;
@@ -212,21 +206,16 @@ h1 {
 
 .Mes_projets img {
   width: 100%;
-  height: 200px; /* Taille fixe pour uniformiser */
+  height: 200px;
   border-radius: 5px;
   margin-bottom: 15px;
-  object-fit: cover; /* Remplit l'espace tout en conservant les proportions */
+  object-fit: cover;
 }
 
 .Mes_projets h3 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #fff;
-}
-
-.Mes_projets p {
-  font-size: 0.9rem;
-  color: #bbb;
 }
 
 .Mes_projets button {
@@ -243,7 +232,6 @@ h1 {
   background-color: #007acc;
 }
 
-/* Footer */
 footer {
   display: flex;
   justify-content: center;
