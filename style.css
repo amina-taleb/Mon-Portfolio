@@ -3,13 +3,15 @@ body {
   flex-direction: column;
   padding: 0px;
   font-family: 'Arial', sans-serif;
-  background-color: #000000; }
+  background-color: #000000;
+}
 
 .bloc1 {
   height: 420px;
   justify-content: center;
   align-items: center;
-  position: relative; }
+  position: relative;
+}
 
 .bloc1 img {
   width: 100%;
@@ -20,19 +22,18 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0; /* Ensure no extra margin is applied */
+  margin: 0;
 }
-
 
 .bloc2 {
   position: sticky;
   top: 0;
   display: flex;
   flex-direction: row;
-  height: 80px; /* Reduced height for a cleaner look */
+  height: 80px;
   z-index: 10;
-  background-color: #333; /* Dark background for navigation */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .navigation {
@@ -62,7 +63,8 @@ a {
 }
 
 a:hover {
-  color: #1e90ff; }
+  color: #1e90ff;
+}
 
 .button_red, .button_blue {
   background-color: transparent;
@@ -85,22 +87,6 @@ a:hover {
 .button_blue:hover {
   background-color: #1e90ff;
   color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  .bloc1 {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .navigation {
-    width: 100%;
-  }
-
-  .button_red, .button_blue {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .bloc3 {
@@ -136,7 +122,7 @@ h1 {
   color: white;
 }
 
-.discription {
+.description {
   font-family: 'Verdana', sans-serif;
   font-style: italic;
   color: #ddd;
@@ -147,7 +133,6 @@ h1 {
   font-size: 1.2rem;
   color: #fff;
 }
-
 
 .Mes_compétences {
   display: grid;
@@ -179,8 +164,6 @@ h1 {
   padding: 10px; 
   box-sizing: border-box; 
 }
-
-
 
 .Mes_projets {
   display: flex;
@@ -247,4 +230,51 @@ footer h3 {
   font-family: 'Times New Roman', serif;
   font-size: 1.5rem;
   font-style: italic;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .Mes_compétences {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bloc1 {
+    height: auto;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .button_red, .button_blue {
+    width: 100%;
+    height: auto;
+  }
+
+  .bloc3 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bloc2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Mes_projets {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
 }
